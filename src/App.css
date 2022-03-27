@@ -1,5 +1,11 @@
 body {
-  background-color: #9eb9cf;
+  /* background-color: #9eb9cf; */
+  background: rgb(105, 88, 177);
+  background: linear-gradient(
+    117deg,
+    rgba(105, 88, 177, 1) 5%,
+    rgba(87, 30, 97, 0.9556197478991597) 100%
+  );
   overflow-y: hidden;
 }
 
@@ -23,7 +29,9 @@ h1 {
   border: 1px solid #dfefef;
   padding: 30px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #fbf5f5;
+  box-shadow: 2px 12px 17px -7px #383838;
+  border-radius: 15px;
 }
 
 .uiForm {
@@ -41,7 +49,7 @@ h1 {
 }
 
 .formField input {
-  border: 1px solid gray;
+  border: 1px solid grey;
   padding: 20px;
   border-radius: 4px;
 }
@@ -71,4 +79,15 @@ button {
 
 button:hover {
   background-color: #0e528d;
+}
+
+.errorMsg {
+  color: red;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.msgOk {
+  color: green;
+  margin-top: 15px;
 }
